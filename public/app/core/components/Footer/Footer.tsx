@@ -18,9 +18,9 @@ export let getFooterLinks = (): FooterLink[] => {
     {
       target: '_blank',
       id: 'community',
-      text: t('nav.help/community', 'MI2RL Homepage'),
-      icon: 'homepage',
-      url: 'http://www.mi2rl.co',
+      text: t('nav.help/community', 'Community'),
+      icon: 'comments-alt',
+      url: 'https://www.mi2rl.co',
     },
   ];
 };
