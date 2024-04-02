@@ -18,16 +18,16 @@ COPY package.json yarn.lock .yarnrc.yml ./
 COPY .yarn .yarn
 COPY packages packages
 COPY plugins-bundled plugins-bundled
-COPY public public
+COPY .public-origin public
 
 RUN apk add --no-cache make build-base python3
 
 RUN yarn install --immutable
 
 COPY tsconfig.json .eslintrc .editorconfig .browserslistrc .prettierrc.js ./
-COPY public public
 COPY scripts scripts
 COPY emails emails
+COPY public public
 
 ENV NODE_ENV production
 RUN yarn build
@@ -95,7 +95,7 @@ FROM ${JS_SRC} as js-src
 # Final stage
 FROM ${BASE_IMAGE}
 
-LABEL maintainer="Grafana Labs <hello@grafana.com>"
+LABEL maintainer="Hyunseok Lim <hyunseoki@outlook.kr>"
 
 ARG GF_UID="472"
 ARG GF_GID="0"

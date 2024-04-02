@@ -1,0 +1,7 @@
+services:
+  debug:
+    build: $PWD
+    tty: true
+    stdin_open: true
+    ports:
+      - 80:3000
