@@ -10,7 +10,7 @@ export interface BrandComponentProps {
 }
 
 export const LoginLogo: FC<BrandComponentProps & { logo?: string }> = ({ className, logo }) => {
-  return <img className={className} src={`${logo ? logo : 'public/img/grafana_icon.svg'}`} alt="Grafana" />;
+  return <img className={className} src={`${logo ? logo : 'public/img/GPU-Cluster_logo.png'}`} alt="MI2RL" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -43,13 +43,13 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
 };
 
 const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="Grafana" />;
+  return <img className={className} src="public/img/GPU-Cluster_logo.png" alt="MI2RL" />;
 };
 
 const LoginBoxBackground = () => {
   const theme = useTheme2();
   return css({
-    background: colorManipulator.alpha(theme.colors.background.primary, 0.7),
+    background: colorManipulator.alpha(theme.colors.background.primary, 0.5),
     backgroundSize: 'cover',
   });
 };
@@ -60,7 +60,7 @@ export class Branding {
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
   static AppTitle = 'MI2RL GPU Cluster';
-  static LoginTitle = 'Welcome to GPU Cluster Dashboard';
+  static LoginTitle = 'MI2RL GPU Cluster Dashboard';
   static HideEdition = true;
   static GetLoginSubTitle = (): null | string => {
     return null;

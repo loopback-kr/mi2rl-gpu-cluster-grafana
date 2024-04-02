@@ -17,24 +17,10 @@ export let getFooterLinks = (): FooterLink[] => {
   return [
     {
       target: '_blank',
-      id: 'documentation',
-      text: t('nav.help/documentation', 'Documentation'),
-      icon: 'document-info',
-      url: 'https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer',
-    },
-    {
-      target: '_blank',
-      id: 'support',
-      text: t('nav.help/support', 'MI2RL Homepage'),
-      icon: 'question-circle',
-      url: 'http://www.mi2rl.co',
-    },
-    {
-      target: '_blank',
       id: 'community',
-      text: t('nav.help/community', 'Community'),
-      icon: 'comments-alt',
-      url: 'https://community.grafana.com/?utm_source=grafana_footer',
+      text: t('nav.help/community', 'MI2RL Homepage'),
+      icon: 'homepage',
+      url: 'http://www.mi2rl.co',
     },
   ];
 };
@@ -110,6 +96,9 @@ export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
               <FooterItem item={link} />
             </li>
           ))}
+        </ul>
+        <ul>
+          2004-2024 Medical Imaging Intelligent Reality Lab, Seoul, Rep. of KOREA, 05505
         </ul>
       </div>
     </footer>
