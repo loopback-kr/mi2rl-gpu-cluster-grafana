@@ -59,9 +59,9 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'Grafana';
-  static LoginTitle = 'Welcome to Grafana';
-  static HideEdition = false;
+  static AppTitle = 'MI2RL GPU Cluster';
+  static LoginTitle = 'Welcome to GPU Cluster Dashboard';
+  static HideEdition = true;
   static GetLoginSubTitle = (): null | string => {
     return null;
   };

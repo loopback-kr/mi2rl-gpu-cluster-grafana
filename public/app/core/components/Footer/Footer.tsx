@@ -25,9 +25,9 @@ export let getFooterLinks = (): FooterLink[] => {
     {
       target: '_blank',
       id: 'support',
-      text: t('nav.help/support', 'Support'),
+      text: t('nav.help/support', 'MI2RL Homepage'),
       icon: 'question-circle',
-      url: 'https://grafana.com/products/enterprise/?utm_source=grafana_footer',
+      url: 'http://www.mi2rl.co',
     },
     {
       target: '_blank',
