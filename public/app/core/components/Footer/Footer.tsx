@@ -101,6 +101,7 @@ export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
           2004-2024 Medical Imaging Intelligent Reality Lab, Seoul, Rep. of KOREA, 05505
         </ul>
       </div>
+      <img src="public/img/Branding_logo.png" height="32px"/>
     </footer>
   );
 });
